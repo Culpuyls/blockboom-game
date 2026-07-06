@@ -1,48 +1,74 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlockBoom - Culpuyls Studio</title>
+    <title>BlockBoom - Official Website</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background: #121212; color: white; text-align: center; }
+        
+        /* MENÚ DE NAVEGACIÓN */
+        nav { padding: 20px; background: #1e1e1e; display: flex; justify-content: center; gap: 30px; border-bottom: 2px solid #2d2d2d; flex-wrap: wrap; }
+        nav a { color: #cbd5e1; text-decoration: none; font-weight: 600; font-size: 1.1em; transition: 0.3s; }
+        nav a:hover { color: #03dac6; }
+        
+        .hero { 
+            height: 80vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            background: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), 
+                        url('https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80'); 
+            background-size: cover; 
+            background-position: center;
+            padding: 0 20px;
         }
-        .container { padding: 20px; }
-        h1 { font-size: 3rem; color: #03dac6; margin-bottom: 10px; }
-        p { font-size: 1.2rem; opacity: 0.8; margin-bottom: 30px; }
-        .btn {
-            display: inline-block;
-            text-decoration: none;
-            color: #bb86fc;
-            border: 2px solid #bb86fc;
-            padding: 12px 30px;
-            border-radius: 50px;
-            font-weight: bold;
-            transition: all 0.3s ease;
+
+        /* COLORES VIVOS Y MODERNOS */
+        h1 { font-size: clamp(3.5em, 12vw, 5.5em); margin-bottom: 20px; color: #03dac6; text-shadow: 0 4px 20px rgba(3, 218, 198, 0.3); }
+        .description { font-size: clamp(1.2em, 3.5vw, 1.5em); max-width: 750px; line-height: 1.6; color: #f1f5f9; margin-bottom: 35px; }
+        
+        .btn { 
+            background: #bb86fc; 
+            color: #121212; 
+            padding: 20px 45px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: 800; 
+            font-size: 1.4em; 
+            transition: all 0.3s ease; 
+            box-shadow: 0 10px 25px rgba(187, 134, 252, 0.3);
+            text-transform: uppercase;
         }
-        .btn:hover {
-            background-color: #bb86fc;
-            color: #121212;
-            transform: translateY(-3px);
-        }
+        .btn:hover { background: #a370e6; transform: translateY(-3px); box-shadow: 0 15px 30px rgba(187, 134, 252, 0.5); }
+
+        .footer { padding: 50px 20px; background: #121212; font-size: 0.95em; color: #94a3b8; border-top: 1px solid #1e1e1e; }
+        .footer a { color: #03dac6; text-decoration: none; font-weight: bold; }
+        .footer a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+    </nav>
+
+    <div class="hero">
         <h1>BlockBoom</h1>
-        <p>¡Disfruta del modo IA, combos multiplicadores y colores modernos sin conexión!</p>
-        <!-- Aquí podrás meter el juego en HTML5, tus enlaces de descarga o la privacidad -->
-        <a href="https://culpuyls.github.io" class="btn">Volver a Culpuyls Studio</a>
+        <p class="description">
+            Enjoy the AI mode, unlock incredible multipliers, and clear lines with bright and modern colors completely offline! Challenge your mind in this highly addictive block puzzle game. Available soon on Google Play.
+        </p>
+        <a href="#" class="btn">Play on Google Play</a>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 BlockBoom. All rights reserved.</p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="app-ads.txt">AdMob Verification</a>
+        </p>
     </div>
 
 </body>
